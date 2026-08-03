@@ -2,6 +2,9 @@
  * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
+
+ JLDB: Created by Copilot to fix the Board = "nice_nano" compile bug 
+ where I had to specify Board = "nice_nano/nrf52840/zmk" instead.
  */
 
 &pinctrl {
@@ -27,7 +30,7 @@ nice_view_spi: &spi0 {
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>; // JLDB changed from 1 to 9 for my wiring configuration.
+    cs-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>;
 };
 
 &pro_micro_i2c {

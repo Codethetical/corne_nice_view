@@ -18,5 +18,10 @@
   "[css][json][jsonc][html][markdown][yaml]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "chat.tools.terminal.autoApprove": {
+    "Set-ExecutionPolicy": true,
+    "&": true
+  },
+  "idf.currentSetup": "C:/Espressif/frameworks/esp-idf-v5.5/"
 }
